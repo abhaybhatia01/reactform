@@ -17,30 +17,36 @@ div.form-wrapper {
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.04);
   border-radius: 10px;
 }
-form{
-  margin-top: 20px;
+
+.form-top{
+  border-radius:10px 10px 0 0;
+}
+.form-bottom{
+  border-radius:0 0 10px 10px ;
+ 
+}
+.input-container{
   padding:20px;
 }
 
 .label{
   font-family: 'Inter';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 20px;
-letter-spacing: -0.1px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.1px;
 }
 
 .validation-error{
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 20px;
-letter-spacing: -0.1px;
-
-
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.1px;
 }
+
 body{
   background: #FAFBFC;
 }
@@ -67,10 +73,14 @@ div.form-floating > .form-control {
   height: 55px;
 } */
 
-
+.dash{
+  border: 2px dashed #DAE0E6;
+  height: 1px;
+  width: max-content;
+}
 .multi-form-heading{
   color:#5F6D7E;
-  font-weight: 700;
+  font-weight: 600;
   font-Size: 14px;
   line-height: 20px;
   margin-top: 10px;
@@ -78,3 +88,96 @@ div.form-floating > .form-control {
 .active{
   color:#437EF7;
 }
+
+@media (prefers-color-scheme: dark) {
+  body{
+    background: #151B28;
+    color: #F9F9F9;
+  }
+  .logo-svg{
+    fill:#ffffff;
+  }
+  /* .dark-theme-logo{
+    fill:#2C3444;
+    stroke: #2C3444;
+  } */
+  .full-form {
+    background: #1C2534;
+    border: 1px solid #252D3C;
+  }
+  .input:autofill{
+    background-color: #333B48 !important;
+    color:#f9f9f9 !important;
+  }
+  .input:focus{
+    background-color: #333B48;
+    border:none;
+    color:#f9f9f9;
+  }
+  .input{
+    background: #333B48;
+    border:none;
+    color:#f9f9f9;
+  }
+  .form-top,.form-bottom{
+    background: #252D3C;
+  }
+  svg path{
+    fill:#ffffff;
+  }
+  .s-1{
+    fill:#2C3444;
+  }
+  .s-2{
+    stroke:#A5ACBA;
+    fill:#2C3444;
+  }
+  .s-3{
+    stroke:#2C3444;
+  }
+
+  .active-s-1{
+    fill:#437EF7;
+  }
+  
+  .active-s-2{
+    stroke:#ffffff;
+    fill:#437EF7;
+  }
+  .active-s-3{
+    stroke:#437EF7;
+  }
+  .label{
+    color:#F9F9F9;
+  }
+
+}
+
+@media (prefers-color-scheme: light) {
+  body{
+    background: #F9F9F9;
+    color: #151B28;
+  }
+  .full-form {
+    background: #FFFFFF;
+    border: 1px solid #DAE0E6;
+  }
+  .form-top,.form-bottom{
+    background: #FAFBFC;
+ }
+ .active-s-1{
+  fill:#437EF7;
+}
+
+.active-s-2{
+  stroke:#ffffff;
+  fill:#437EF7;
+}
+.active-s-3{
+  stroke:#437EF7;
+}
+}
+
+
+
+
